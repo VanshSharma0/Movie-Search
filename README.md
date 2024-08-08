@@ -67,13 +67,9 @@ The app uses the [TMDb (The Movie Database) API](https://www.themoviedb.org/docu
 
 Contributions are welcome! If you have any ideas or improvements, feel free to submit a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 
-If you have any questions or suggestions, feel free to reach out to me at [your email](vanished934@gmail.com).
+If you have any questions or suggestions, feel free to reach out to me at (vanished934@gmail.com).
 
 ---
 
@@ -81,13 +77,3 @@ Happy movie searching!
 
 ---
 
-## Screenshots
-
-### Home Page
-![Home Page](screenshots/home.png)
-
-### Movie Details
-![Movie Details](screenshots/details.png)
-
-### Similar Movies
-![Similar Movies](screenshots/similar.png)
