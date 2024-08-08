@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState('')
   const [input, setInput] = useState('')
   const [showMore, setShowMore] = useState(false)
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
   const [trailer, setTrailer] = useState('')
   const [similarMovies, setSimilarMovies] = useState([])
   const omdbApi = '5718f5b3'
@@ -39,7 +39,7 @@ function App() {
 
   async function getSimilarMovies(genre, language) {
     const firstGenre = genre.split(',')[0].trim()
-    const url = `http://www.omdbapi.com/?apikey=${omdbApi}&s=${firstGenre}&type=movie`
+    const url = `https://www.omdbapi.com/?apikey=${omdbApi}&s=${firstGenre}&type=movie`
     try {
       const response = await axios.get(url)
       if (response.data.Search) {
@@ -58,6 +58,7 @@ function App() {
   const handleButtonClick = () => {
     getData()
     setInput('')
+    setSimilarMovies('')
   }
 
   const showMoreInfo = () => {
@@ -81,7 +82,7 @@ function App() {
   return (
 <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
       <button className="absolute top-5 right-5 text-2xl bg-transparent border-none cursor-pointer" onClick={toggleDarkMode}>
-        {darkMode ? '☀️' : '🌙'}
+        {darkMode ? '🌙' : '☀️'}
       </button>
       <h1 className="text-4xl md:text-5xl font-bold text-center py-8 text-pink-600 dark:text-pink-400 animate-fadeIn">Welcome to Hollywood</h1>
       <div className="flex justify-center mb-8">
