@@ -13,7 +13,7 @@ function App() {
   const youtubeApi = 'YOUR_YOUTUBE_API_KEY' // Replace with your YouTube API key
 
   async function getData() {
-    const url = `http://www.omdbapi.com/?apikey=${omdbApi}&t=${input}&plot=full`
+    const url = `https://www.omdbapi.com/?apikey=${omdbApi}&t=${input}&plot=full`
     try {
       const response = await axios.get(url)
       setData(response.data)
